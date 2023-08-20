@@ -17,13 +17,11 @@ struct ContentView: View {
                 Button("リセット"){
                     
                 }
-                .modifier(ButtonModifier(backgroundColor: .red))
-                
+                .buttonModifier(color: .red)
                 Button("おみくじを引く"){
                     
                 }
-                .modifier(ButtonModifier(backgroundColor: .green))
-                
+                .buttonModifier(color: .green)
             }
         }
         .padding()
@@ -36,12 +34,4 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct ButtonModifier: ViewModifier{
-    let backgroundColor: Color
-    func body(content: Content) -> some View {
-        content
-            .frame(maxWidth: .infinity, minHeight: 50)
-            .background(backgroundColor)
-            .foregroundColor(.white)
-    }
-}
+

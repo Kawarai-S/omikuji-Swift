@@ -11,6 +11,7 @@
 		A55DD2372A91AEF500E1538F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DD2362A91AEF500E1538F /* ContentView.swift */; };
 		A55DD2392A91AEF700E1538F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55DD2382A91AEF700E1538F /* Assets.xcassets */; };
 		A55DD23C2A91AEF700E1538F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55DD23B2A91AEF700E1538F /* Preview Assets.xcassets */; };
+		A55DD2432A91D92500E1538F /* OmikujiModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DD2422A91D92500E1538F /* OmikujiModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		A55DD2362A91AEF500E1538F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A55DD2382A91AEF700E1538F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A55DD23B2A91AEF700E1538F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A55DD2422A91D92500E1538F /* OmikujiModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmikujiModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				A55DD2342A91AEF500E1538F /* omikuji0820App.swift */,
 				A55DD2362A91AEF500E1538F /* ContentView.swift */,
+				A55DD2422A91D92500E1538F /* OmikujiModifier.swift */,
 				A55DD2382A91AEF700E1538F /* Assets.xcassets */,
 				A55DD23A2A91AEF700E1538F /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A55DD2372A91AEF500E1538F /* ContentView.swift in Sources */,
+				A55DD2432A91D92500E1538F /* OmikujiModifier.swift in Sources */,
 				A55DD2352A91AEF500E1538F /* omikuji0820App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
