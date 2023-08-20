@@ -8,18 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var imageName = "omikuji"
     var body: some View {
         VStack {
-            Image("omikuji")
+            Image(imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
             HStack{
                 Button("リセット"){
-                    
+                    imageName = "omikuji"
                 }
                 .buttonModifier(color: .red)
                 Button("おみくじを引く"){
-                    
+                    let luckNumber = Int.random(in: 0...2)
+                    if luckNumber == 0 {
+                        imageName = "daikichi"
+                    } else if luckNumber == 1 {
+                        imageName = "kichi"
+                    } else {
+                        imageName = "kyou"
+                    }
                 }
                 .buttonModifier(color: .green)
             }
