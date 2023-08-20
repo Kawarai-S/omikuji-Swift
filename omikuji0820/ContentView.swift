@@ -20,21 +20,25 @@ struct ContentView: View {
                 }
                 .buttonModifier(color: .red)
                 Button("おみくじを引く"){
-                    let luckNumber = Int.random(in: 0...2)
-                    if luckNumber == 0 {
-                        imageName = "daikichi"
-                    } else if luckNumber == 1 {
-                        imageName = "kichi"
-                    } else {
-                        imageName = "kyou"
-                    }
+                    updateOmikujiImageView()
                 }
                 .buttonModifier(color: .green)
             }
         }
         .padding()
     }
+    func updateOmikujiImageView() {
+        let luckNumber = Int.random(in: 0...2)
+        if luckNumber == 0 {
+            imageName = "daikichi"
+        } else if luckNumber == 1 {
+            imageName = "kichi"
+        } else {
+            imageName = "kyou"
+        }
+    }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
